@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI Psychosis on HN</title>
+<meta name="description" content="How Hacker News discusses AI psychosis and problematic AI use, 2023 to 2026: topics, tone, emotion, terms and conversation networks, with every account pseudonymized.">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="top wrap">
+  <div class="row">
+    <div>
+      <h1>How Hacker News talks about AI psychosis</h1>
+      <p>A research dashboard on Hacker News posts and comments, Jan 2023 to Nov 2026, about AI psychosis, chatbot delusions, emotional dependence and other problematic AI use in health, education, software, law and everyday life. <b>Every account is shown under a pseudonym.</b></p>
+    </div>
+    <div class="top-actions">
+      <button class="btn primary" id="tour-btn">Take the 1-minute tour</button>
+      <button class="btn" id="gloss-btn">Glossary</button>
+      <button class="btn" id="theme-btn" aria-label="Switch between light and dark theme">Light / dark</button>
+    </div>
+  </div>
+</header>
+
+<section class="filters" id="filters" aria-label="Filters">
+  <div class="wrap">
+    <div class="filter-row" id="filter-row"></div>
+    <div class="sentence" id="sentence" aria-live="polite"></div>
+  </div>
+</section>
+
+<div class="wrap">
+  <nav class="tabs" id="tabs" role="tablist" aria-label="Views"></nav>
+  <main id="main">
+    <section class="view" id="view-overview" role="tabpanel"></section>
+    <section class="view" id="view-topics" role="tabpanel" hidden></section>
+    <section class="view" id="view-emotion" role="tabpanel" hidden></section>
+    <section class="view" id="view-terms" role="tabpanel" hidden></section>
+    <section class="view" id="view-network" role="tabpanel" hidden></section>
+    <section class="view" id="view-explorer" role="tabpanel" hidden></section>
+    <section class="view" id="view-methods" role="tabpanel" hidden></section>
+  </main>
+</div>
+
+<div class="tip" id="tip" hidden role="tooltip"></div>
+<div class="overlay" id="thread-overlay" hidden><div class="modal" id="thread-modal" role="dialog" aria-modal="true" aria-labelledby="thread-title"></div></div>
+<aside class="drawer" id="glossary" hidden aria-label="Glossary"></aside>
+<div class="tour-ring" id="tour-ring" hidden></div>
+<div class="tour-pop" id="tour-pop" hidden role="dialog" aria-live="polite"></div>
+<div id="loading" class="wrap empty">Loading data…</div>
+
+<script src="js/vendor/d3.min.js"></script>
+<script src="js/core.js"></script>
+<script src="js/ui.js"></script>
+<script src="js/views/overview.js"></script>
+<script src="js/views/topics.js"></script>
+<script src="js/views/emotion.js"></script>
+<script src="js/views/terms.js"></script>
+<script src="js/views/network.js"></script>
+<script src="js/views/explorer.js"></script>
+<script src="js/views/methods.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
